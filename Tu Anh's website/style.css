@@ -1,0 +1,153 @@
+/* for every page */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#site {
+  margin: 0 auto;
+  padding: 25px;
+}
+
+body {
+  font-family: "Special Elite", system-ui;
+  background: linear-gradient(rgb(245, 239, 237), rgb(210, 193, 186));
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+#title {
+  font-family: "Special Elite", system-ui;
+  color: rgb(182, 86, 69);
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  padding-top: 1.7rem;
+  cursor: default;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-size: 12px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(39, 35, 34);
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: rgb(184, 167, 163);
+  font-size: 16px;
+}
+
+/* artist page */
+#artist-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border-style: solid;
+  border-color: rgb(182, 86, 69);
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-width: 2px;
+  padding: 12px;
+  margin-top: 1rem;
+}
+
+#artist-info {
+  font-size: 12px;
+  padding-top: 1.4rem;
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 35px;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #8e8e8ecf;
+}
+
+#socials a {
+  text-decoration: none;
+  transition: 0.2s;
+  color: inherit;
+}
+
+#socials a:hover {
+  color: rgb(184, 167, 163);
+  font-size: 30px;
+}
+
+#send-email {
+  text-decoration: none;
+  font-size: 12px;
+  padding-top: 16px;
+  padding-bottom: 1.8rem;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+#info {
+  font-size: 12px;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #8e8e8ecf;
+}
+
+/* main page */
+
+#photos {
+  column-count: 2;
+  column-gap: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+#photos img {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+  border-radius: 2%;
+  transition: 0.5s;
+  position: relative;
+  z-index: 3;
+}
+
+#photos img:hover {
+  transform: scale(1.2);
+  border-radius: 0%;
+  box-shadow: 0px 5px 23px rgb(0, 0, 0);
+  z-index: 4;
+}
+
+#dark-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
