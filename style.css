@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #site {
@@ -10,8 +11,13 @@
 }
 
 body {
+  display: flex;
   font-family: "Special Elite", system-ui;
-  background: linear-gradient(rgb(245, 239, 237), rgb(210, 193, 186));
+  background: linear-gradient(
+    to bottom right,
+    rgb(245, 239, 237),
+    rgb(200, 166, 152)
+  );
   background-attachment: fixed;
   height: 100%;
   width: 100%;
@@ -20,18 +26,21 @@ body {
 #title {
   font-family: "Special Elite", system-ui;
   color: rgb(182, 86, 69);
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 100;
   letter-spacing: 10px;
-  padding-top: 1.7rem;
-  cursor: default;
+  padding-top: 1.6rem;
+  cursor: pointer;
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 100px;
-  font-size: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
@@ -111,6 +120,7 @@ nav a:hover {
 /* main page */
 
 #photos {
+  position: relative;
   column-count: 2;
   column-gap: 20px;
   width: fit-content;
@@ -119,7 +129,6 @@ nav a:hover {
   padding-right: 10%;
   padding-top: 20px;
   z-index: 2;
-  position: relative;
 }
 
 #photos img {
@@ -133,7 +142,7 @@ nav a:hover {
 }
 
 #photos img:hover {
-  transform: scale(1.2);
+  transform: scale(1.35);
   border-radius: 0%;
   box-shadow: 0px 5px 23px rgb(0, 0, 0);
   z-index: 4;
@@ -145,9 +154,55 @@ nav a:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.75);
   opacity: 0;
   pointer-events: none;
   z-index: 1;
   transition: opacity 0.4s ease;
+}
+
+/* responsive */
+
+@media (max-width: 400px) {
+  nav {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #title {
+    font-size: 11vw;
+  }
+
+  nav {
+    gap: 12vw;
+  }
+
+  #site {
+    padding: 10px;
+  }
+
+  #photos {
+    gap: 10px;
+  }
+
+  #photos img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #photos {
+    column-count: 3;
+  }
+
+  #photos img:hover {
+    transform: scale(1.7);
+  }
+}
+
+@media (min-width: 1800px) {
+  #photos {
+    column-count: 4;
+  }
 }
