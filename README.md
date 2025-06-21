@@ -11,13 +11,17 @@ A well-designed yet simple website for Anh Konge displaying all of her most belo
 ## Changes
 
 June 20, 2025
+```
 - Added media queries
 - Changed linear-background direction
 - Added merch icon on about-artist.html
 - Title now redirects user to main page
+```
 
 June 11, 2025:
+```
 - Updated both html files with a "merch" anchor for the navigation bar.
 - Updated README.md file.
 - Created custom domain name.
 - Moved all files into a single folder (excluding images folder).
+```
