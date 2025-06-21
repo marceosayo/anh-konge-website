@@ -1,6 +1,9 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
   const darkBG = document.querySelector("#dark-bg");
   const photosIMG = document.querySelectorAll("#photos img");
+  const title = document.querySelector("#title");
 
   photosIMG.forEach((img) => {
     img.addEventListener("mouseenter", () => {
@@ -14,5 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
       darkBG.classList.remove("active");
       img.classList.remove("hover");
     });
+  });
+
+  title.addEventListener("click", () => {
+    window.location.href = "index.html";
   });
 });
