@@ -13,7 +13,15 @@
 body {
   display: flex;
   font-family: "Special Elite", system-ui;
+<<<<<<< HEAD
   background: white;
+=======
+  background: linear-gradient(
+    to bottom right,
+    rgb(245, 239, 237),
+    rgb(200, 166, 152)
+  );
+>>>>>>> 225079871bd5e877734fbf56a116d995aea3acc1
   background-attachment: fixed;
   height: 100%;
   width: 100%;
@@ -21,7 +29,11 @@ body {
 
 #title {
   font-family: "Special Elite", system-ui;
+<<<<<<< HEAD
   color: black;
+=======
+  color: rgb(182, 86, 69);
+>>>>>>> 225079871bd5e877734fbf56a116d995aea3acc1
   font-size: 3.75rem;
   font-weight: 100;
   letter-spacing: 10px;
@@ -48,7 +60,11 @@ nav a {
 }
 
 nav a:hover {
+<<<<<<< HEAD
   color: rgb(180, 171, 169);
+=======
+  color: rgb(184, 167, 163);
+>>>>>>> 225079871bd5e877734fbf56a116d995aea3acc1
   font-size: 16px;
 }
 
@@ -59,7 +75,11 @@ nav a:hover {
   margin-right: auto;
   width: 300px;
   border-style: solid;
+<<<<<<< HEAD
   border-color: black;
+=======
+  border-color: rgb(182, 86, 69);
+>>>>>>> 225079871bd5e877734fbf56a116d995aea3acc1
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
   border-width: 2px;
@@ -89,7 +109,11 @@ nav a:hover {
 }
 
 #socials a:hover {
+<<<<<<< HEAD
   color: rgb(118, 113, 112);
+=======
+  color: rgb(184, 167, 163);
+>>>>>>> 225079871bd5e877734fbf56a116d995aea3acc1
   font-size: 30px;
 }
 
@@ -134,7 +158,10 @@ nav a:hover {
   border-radius: 2%;
   transition: 0.5s;
   position: relative;
+<<<<<<< HEAD
   /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.35); */
+=======
+>>>>>>> 225079871bd5e877734fbf56a116d995aea3acc1
   z-index: 3;
 }
 
